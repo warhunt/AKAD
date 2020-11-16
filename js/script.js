@@ -3278,7 +3278,11 @@ aside_posts_link.forEach((element1) => {
         const category = element1.getAttribute("category");
         const aside_posts_posts = document.querySelectorAll(".aside-posts__posts");
         aside_posts_posts.forEach((element2) => {
-            element2.classList.contains(category) ? element2.style.display = "block" : element2.style.display = "none";
+            if (element2.classList.contains(category)) {
+                element2.classList.add('aside-posts__posts-active')
+            } else {
+                element2.classList.remove('aside-posts__posts-active')
+            }
         });
 
     });

@@ -11277,6 +11277,36 @@ body {
   color: #60606e;
 }
 
+.aside-posts__posts {
+  display: none;
+}
+
+.aside-posts__posts-active {
+  display: block;
+  -webkit-animation: showBlock 1s forwards;
+          animation: showBlock 1s forwards;
+}
+
+@-webkit-keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .aside-posts__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11315,10 +11345,6 @@ body {
   font-family: OpenSans;
   font-size: 12px;
   color: #9a9a9a;
-}
-
-.aside-posts .popular {
-  display: none;
 }
 
 .pagination {
