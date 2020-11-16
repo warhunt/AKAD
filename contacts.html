@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAD - Contacts</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ee0307c7-ac56-4848-b206-cb16e9626a73&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="animsition">
+    <header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <a href="" class="header__logo">Akad.</a>
+                <div class="header__menu menu">
+                    <div class="menu__icon icons-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav data-da="header,last,992" class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="index.html" class="menu__link animsition-link">Home</a></li>
+                            <li class="menu__item"><a href="about.html" class="menu__link animsition-link">About us</a>
+                            </li>
+                            <li class="menu__item"><a href="services.html"
+                                    class="menu__link animsition-link">Services</a></li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link ">Portfolio</a>
+                                <div class="sec">
+                                    <ul class="sec__list">
+                                        <li class="sec__item"><a class="sec__link animsition-link"
+                                                href="portfolio.html">Portfoliolist</a></li>
+                                        <li class="sec__item"><a class="sec__link animsition-link"
+                                                href="single-project-1.html">Single
+                                                project 1</a></li>
+                                        <li class="sec__item"><a class="sec__link animsition-link"
+                                                href="single-project-2.html">Single
+                                                project 2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Blog</a>
+                                <div class="sec">
+                                    <ul class="sec__list">
+                                        <li class="sec__item"><a class="sec__link animsition-link" href="blog.html">Post
+                                                list</a></li>
+                                        <li class="sec__item"><a class="sec__link animsition-link"
+                                                href="single-post.html">Single
+                                                post</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item"><a href="contacts.html" class="menu__link animsition-link">Contact
+                                    us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="top">
+    <div class="top__bg">
+        <img src="img/bg-page.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="top__title">About us</div>
+                <div class="top__subtitle">Home / about</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="contacts section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <form class="contacts__form contact-form form">
+                        <div class="d-md-flex justify-content-between">
+                            <div class="contacts-form__item form__group mr-md-4">
+                                <input type="text" class="form__input" placeholder=" ">
+                                <label class="form__label">Your name</label>
+                            </div>
+                            <div class="contacts-form__item form__group">
+                                <input type="text" class="form__input" placeholder=" ">
+                                <label class="form__label">Your email</label>
+                            </div>
+                        </div>
+                        <div class="contacts-form__item form__group">
+                            <input type="text" class="form__input" placeholder=" ">
+                            <label class="form__label">Object</label>
+                        </div>
+                        <div class=" contacts-form__item form__group">
+                            <textarea class="form__input" placeholder=" " rows="12"></textarea>
+                            <label class="form__label form__label--message">Message</label>
+                        </div>
+                        <input type="submit" class="form__btn form__btn--contacts btn" value="Send">
+                    </form>
+                    <ul class="contacts__social social mb-5 mb-lx-0">
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-facebook"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-twitter"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-youtube"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-linkedin"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i
+                                    class="ion-social-pinterest"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i
+                                    class="ion-social-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-6">
+                    <div id="map" class="contacts__map">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer wow fadeInUp animated" data-wow-delay=".2s">
+    <div class="footer__getintuch">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer__title">You think we`re cool?<br> Let`s work together</div>
+                    <a href="#" class="footer__btn btn btn--invert">Get in touch</a>
+                </div>
+                <div class="col-lg-6">
+                    <form class="footer__form form">
+                        <div class="form__title">Stay informed with our newsletter</div>
+                        <div class="form__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder=" ">
+                            <label class="form__label">Your email</label>
+                            <input type="submit" data-da="footer__form,last,576" class="form__btn btn" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__subfooter subfooter">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 d-flex flex-column flex-xl-row align-items-center justify-content-xl-between">
+                    <nav class="subfooter__menu">
+                        <ul class="subfooter__list">
+                            <li class="subfooter__item">
+                                <a href="index.html" class="subfooter__link animsition-link">Home</a>
+                            </li>
+                            <li class="subfooter__item">
+                                <a href="about.html" class="subfooter__link animsition-link">About us</a>
+                            </li>
+                            <li class="subfooter__item">
+                                <a href="services.html" class="subfooter__link animsition-link">Services</a>
+                            </li>
+                            <li class="subfooter__item">
+                                <a href="portfolio.html" class="subfooter__link animsition-link">Portfolio</a>
+                            </li>
+                            <li class="subfooter__item">
+                                <a href="blog.html" class="subfooter__link animsition-link">Blog</a>
+                            </li>
+                            <li class="subfooter__item">
+                                <a href="contacts.html" class="subfooter__link animsition-link">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="subfooter__copyrigth">Created by akhouad 2016. All Rights Reserved</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center justify-content-xl-end">
+                    <ul class="subfooter__social social">
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-facebook"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-twitter"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-youtube"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-linkedin"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-pinterest"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link animsition-link"><i class="ion-social-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/script.min.js"></script>
+    <script >
+        ymaps.ready(map_init);
+        function map_init() {
+            // Создание карты.
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [53.89, 27.56],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 16,
+                controls: [],
+                behaviors: ['drag']
+            });
+
+            var placemar = new ymaps.Placemark([53.891232, 27.558741], {
+                hintContent: '<div>Hello</div>'
+            },
+                {
+                    iconLayout: 'default#image',
+                    iconImageHref: '../img/contacts/map.png',
+                    iconImageSize: [40, 40],
+                    iconImageOffset: [-20, -40]
+                });
+
+            myMap.geoObjects.add(placemar);
+        }
+    </script>
+    
+</body>
+
+</html>
